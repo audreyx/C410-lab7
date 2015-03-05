@@ -28,6 +28,14 @@ def add_link(request):
         url = request.POST.get("url", "")
         tags = request.POST.get("tags", "")
         title = request.POST.get("title", "")
+
+    l = Link.objects.get_or_create(title=title, url=url)[0]
+    tags = [x.strip() for x in tags.split(',')] # remove comma and all space
+
+    for tag in tags:
+        t = Tag.objects.get_or_create(name=tag)[0]
+        l.tags.add(t)
+
     return redirect(index)
 
 # Create your views here.

@@ -39,7 +39,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/zib/Desktop/C410-lab6/3/v1"
+VIRTUAL_ENV="/home/zib/Git/C410-lab7/3/v1"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

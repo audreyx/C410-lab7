@@ -32,7 +32,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/zib/Desktop/C410-lab6/3/v1"
+set -gx VIRTUAL_ENV "/home/zib/Git/C410-lab7/3/v1"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

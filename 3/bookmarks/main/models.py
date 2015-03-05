@@ -14,3 +14,4 @@ class Link(models.Model):
     tags = models.ManyToManyField(Tag)
     def __unicode__(self):
         return self.title
+
